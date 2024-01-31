@@ -1,2 +1,2 @@
-# States---Life-Cycles
-States-&amp;-Life-Cycles
+# States-And-Life-Cycles
+States-And-Life-Cycles
