@@ -14,6 +14,8 @@ const App = () => {
     </div>
   );
 };
+
+export default App;
 // const Counter = () => {
 //   const[count, setCount] = useState(0);
 
