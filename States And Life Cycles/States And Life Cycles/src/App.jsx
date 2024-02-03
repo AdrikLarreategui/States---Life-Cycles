@@ -1,9 +1,19 @@
 // import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import Greeting from './components/Greeting';
+import Counter from './components/Counter';
 import './App.css'
 
+const App = () => {
+  return (
+    <div>
+      <Counter initialValue={5} step={2} />
+      <Greeting name = 'Euralio' />
+    </div>
+  );
+};
 // const Counter = () => {
 //   const[count, setCount] = useState(0);
 
@@ -25,25 +35,25 @@ import './App.css'
 // }
 // export default Counter
 
-const Greeting = (props) => {
-  const [message, setMessage] = useState ('Hola, Euralio');
+// const Greeting = (props) => {
+//   const [message, setMessage] = useState ('Hola, Euralio');
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setMessage('Hola Alfonsina');
-    }, 3000);
+//   useEffect(() => {
+//     const timer = setTimeout(() => {
+//       setMessage('Hola Alfonsina');
+//     }, 3000);
 
-    return () => clearTimeout(timer);
-  }, []);
+//     return () => clearTimeout(timer);
+//   }, []);
 
-  return (
-    <div>
-      <p>{message}</p>
-    </div>
-  );
-};
+//   return (
+//     <div>
+//       <p>{message}</p>
+//     </div>
+//   );
+// };
 
-export default Greeting;
+// export default Greeting;
 
 
 
